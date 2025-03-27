@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img class="voltar" src="img/voltar.png" alt="voltar" height="60px">
+        <h1 class="cadastro">Cadastre-se</h1>
+    </nav>
+    <section class="formulario">
+        <section class="form">
+            <section class="username">
+                <img src="img/login.png" alt="login" height="40px">
+                <input type="text" id="login" placeholder="Username" oninput="validarEmail()">
+            </section>
+            <p id="validacaoEmail"></p>
+            <section class="password">
+                <img src="img/password.png" alt="password" height="40px">
+                <input type="password" id="senha" placeholder="Password" oninput="validarSenha()">
+            </section>
+            <p id="validacaoSenha"></p>
+            <section class="botao">
+                <button class="botao-estilizado" onclick="enter()">Enter</button>
+            </section>
+            <script src="js/enter.js"></script>
+        </section>
+    </section>
+</body>
+
+</html>
